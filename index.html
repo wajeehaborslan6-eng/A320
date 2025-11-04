@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A320 / Fly Cham - Crew Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>A320 / Fly Cham</h1>
+    </header>
+
+    <main>
+        <section id="login-screen" class="active">
+            <h2>Crew Login</h2>
+            <form id="login-form">
+                <label for="crew-id">Enter Your Crew ID:</label>
+                <input type="text" id="crew-id" required placeholder="e.g., 1111" maxlength="4">
+                <button type="submit">Start Test</button>
+                <p id="login-error" class="error-message"></p>
+            </form>
+        </section>
+
+        <section id="quiz-screen">
+            <h2 id="welcome-message">Welcome, [Crew Name]</h2>
+            
+            <p id="countdown-timer" style="font-weight: bold; color: black;">Time Left: 40s</p>
+            
+            <form id="quiz-form">
+                
+                <div class="question-container">
+                    <p class="question-type">Safety Question</p>
+                    <p id="q1-text" class="question-text">Loading...</p>
+                    <div id="q1-options" class="options-group">
+                        </div>
+                </div>
+
+                <hr>
+
+                <div class="question-container">
+                    <p class="question-type">First Aid Question</p>
+                    <p id="q2-text" class="question-text">Loading...</p>
+                    <div id="q2-options" class="options-group">
+                        </div>
+                </div>
+
+                <button type="submit" id="submit-test">Submit Answers</button>
+            </form>
+        </section>
+
+        <section id="results-screen">
+            <h2>Test Completed!</h2>
+            <p>Thank you for completing the safety assessment. Your results have been submitted for review.</p>
+            <p>Please log out and wait for instructions.</p>
+            <button id="logout-button">Log Out</button> 
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
